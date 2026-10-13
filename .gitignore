@@ -1,0 +1,21 @@
+.venv/
+.cache/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.pyc
+.env
+.env.*
+!.env.example
+outputs/s3_upload_result.json
+outputs/s3_upload_plan.json
+quicksight/athena_setup.local.sql
+
+# Large generated files (rebuilt by scripts.run_pipeline)
+data/raw/monthly_snapshots.csv
+data/processed/monthly_snapshots.csv
+outputs/churn_retention.sqlite
+
+# Personal notes
+RESUME_BULLETS.md
+INTERVIEW_WALKTHROUGH.md

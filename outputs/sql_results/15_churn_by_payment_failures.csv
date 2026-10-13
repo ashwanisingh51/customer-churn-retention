@@ -1,0 +1,5 @@
+payment_failures,customers,churned_customers,cumulative_churn_rate
+2,291,148,0.50859107
+3,10,5,0.50000000
+1,2539,960,0.37810161
+0,9040,2236,0.24734513

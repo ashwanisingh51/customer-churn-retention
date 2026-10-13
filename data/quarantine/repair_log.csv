@@ -1,0 +1,211 @@
+customer_id,field,old_value,new_value,rule
+C000808,plan_type,  premium plan  ,Premium,standardize_plan
+C001101,plan_type,  premium plan  ,Premium,standardize_plan
+C001372,plan_type,  basic plan  ,Basic,standardize_plan
+C001505,plan_type,  standard plan  ,Standard,standardize_plan
+C001565,plan_type,  basic plan  ,Basic,standardize_plan
+C002652,plan_type,  basic plan  ,Basic,standardize_plan
+C002706,plan_type,  premium plan  ,Premium,standardize_plan
+C002713,plan_type,  basic plan  ,Basic,standardize_plan
+C002842,plan_type,  basic plan  ,Basic,standardize_plan
+C003061,plan_type,  premium plan  ,Premium,standardize_plan
+C003191,plan_type,  basic plan  ,Basic,standardize_plan
+C003722,plan_type,  basic plan  ,Basic,standardize_plan
+C004812,plan_type,  standard plan  ,Standard,standardize_plan
+C005353,plan_type,  basic plan  ,Basic,standardize_plan
+C005617,plan_type,  basic plan  ,Basic,standardize_plan
+C005658,plan_type,  premium plan  ,Premium,standardize_plan
+C007081,plan_type,  standard plan  ,Standard,standardize_plan
+C007572,plan_type,  premium plan  ,Premium,standardize_plan
+C008246,plan_type,  standard plan  ,Standard,standardize_plan
+C008394,plan_type,  standard plan  ,Standard,standardize_plan
+C008924,plan_type,  basic plan  ,Basic,standardize_plan
+C009073,plan_type,  standard plan  ,Standard,standardize_plan
+C010124,plan_type,  standard plan  ,Standard,standardize_plan
+C010287,plan_type,  standard plan  ,Standard,standardize_plan
+C010415,plan_type,  standard plan  ,Standard,standardize_plan
+C010591,plan_type,  standard plan  ,Standard,standardize_plan
+C010678,plan_type,  standard plan  ,Standard,standardize_plan
+C010891,plan_type,  standard plan  ,Standard,standardize_plan
+C011239,plan_type,  premium plan  ,Premium,standardize_plan
+C011854,plan_type,  basic plan  ,Basic,standardize_plan
+C000084,payment_method,nan,Unknown,missing_category_to_unknown
+C001218,payment_method,nan,Unknown,missing_category_to_unknown
+C001569,payment_method,nan,Unknown,missing_category_to_unknown
+C001899,payment_method,nan,Unknown,missing_category_to_unknown
+C001910,payment_method,nan,Unknown,missing_category_to_unknown
+C002048,payment_method,nan,Unknown,missing_category_to_unknown
+C002150,payment_method,nan,Unknown,missing_category_to_unknown
+C002338,payment_method,nan,Unknown,missing_category_to_unknown
+C002972,payment_method,nan,Unknown,missing_category_to_unknown
+C003159,payment_method,nan,Unknown,missing_category_to_unknown
+C003428,payment_method,nan,Unknown,missing_category_to_unknown
+C004132,payment_method,nan,Unknown,missing_category_to_unknown
+C004660,payment_method,nan,Unknown,missing_category_to_unknown
+C004901,payment_method,nan,Unknown,missing_category_to_unknown
+C005114,payment_method,nan,Unknown,missing_category_to_unknown
+C005497,payment_method,nan,Unknown,missing_category_to_unknown
+C005621,payment_method,nan,Unknown,missing_category_to_unknown
+C005883,payment_method,nan,Unknown,missing_category_to_unknown
+C006126,payment_method,nan,Unknown,missing_category_to_unknown
+C006404,payment_method,nan,Unknown,missing_category_to_unknown
+C006648,payment_method,nan,Unknown,missing_category_to_unknown
+C007710,payment_method,nan,Unknown,missing_category_to_unknown
+C008023,payment_method,nan,Unknown,missing_category_to_unknown
+C008591,payment_method,nan,Unknown,missing_category_to_unknown
+C009265,payment_method,nan,Unknown,missing_category_to_unknown
+C009765,payment_method,nan,Unknown,missing_category_to_unknown
+C009969,payment_method,nan,Unknown,missing_category_to_unknown
+C010106,payment_method,nan,Unknown,missing_category_to_unknown
+C010113,payment_method,nan,Unknown,missing_category_to_unknown
+C010747,payment_method,nan,Unknown,missing_category_to_unknown
+C000787,region,nan,West,city_reference_mapping
+C000791,region,nan,South,city_reference_mapping
+C001180,region,nan,West,city_reference_mapping
+C001736,region,nan,South,city_reference_mapping
+C002170,region,nan,Northeast,city_reference_mapping
+C002436,region,nan,Midwest,city_reference_mapping
+C002487,region,nan,Midwest,city_reference_mapping
+C002855,region,nan,South,city_reference_mapping
+C003469,region,nan,Northeast,city_reference_mapping
+C003798,region,nan,South,city_reference_mapping
+C004822,region,nan,South,city_reference_mapping
+C004948,region,nan,West,city_reference_mapping
+C004980,region,nan,West,city_reference_mapping
+C005395,region,nan,West,city_reference_mapping
+C005985,region,nan,Northeast,city_reference_mapping
+C006408,region,nan,South,city_reference_mapping
+C006446,region,nan,West,city_reference_mapping
+C007636,region,nan,Northeast,city_reference_mapping
+C007788,region,nan,Midwest,city_reference_mapping
+C008130,region,nan,West,city_reference_mapping
+C008210,region,nan,South,city_reference_mapping
+C009690,region,nan,Northeast,city_reference_mapping
+C009954,region,nan,Northeast,city_reference_mapping
+C010533,region,nan,Northeast,city_reference_mapping
+C010555,region,nan,South,city_reference_mapping
+C010721,region,nan,South,city_reference_mapping
+C010927,region,nan,South,city_reference_mapping
+C011029,region,nan,South,city_reference_mapping
+C011185,region,nan,Northeast,city_reference_mapping
+C011395,region,nan,Midwest,city_reference_mapping
+C000549,churn_flag,0,1,validated_end_date_authoritative
+C000746,churn_flag,1,0,validated_end_date_authoritative
+C000818,churn_flag,1,0,validated_end_date_authoritative
+C001896,churn_flag,1,0,validated_end_date_authoritative
+C001932,churn_flag,1,0,validated_end_date_authoritative
+C002492,churn_flag,1,0,validated_end_date_authoritative
+C003150,churn_flag,0,1,validated_end_date_authoritative
+C003219,churn_flag,1,0,validated_end_date_authoritative
+C003235,churn_flag,0,1,validated_end_date_authoritative
+C003309,churn_flag,1,0,validated_end_date_authoritative
+C003769,churn_flag,1,0,validated_end_date_authoritative
+C004818,churn_flag,1,0,validated_end_date_authoritative
+C004858,churn_flag,1,0,validated_end_date_authoritative
+C005789,churn_flag,1,0,validated_end_date_authoritative
+C006125,churn_flag,1,0,validated_end_date_authoritative
+C006136,churn_flag,1,0,validated_end_date_authoritative
+C006330,churn_flag,1,0,validated_end_date_authoritative
+C006719,churn_flag,1,0,validated_end_date_authoritative
+C006887,churn_flag,1,0,validated_end_date_authoritative
+C007145,churn_flag,1,0,validated_end_date_authoritative
+C007376,churn_flag,1,0,validated_end_date_authoritative
+C007784,churn_flag,0,1,validated_end_date_authoritative
+C007999,churn_flag,1,0,validated_end_date_authoritative
+C008040,churn_flag,1,0,validated_end_date_authoritative
+C008830,churn_flag,1,0,validated_end_date_authoritative
+C009120,churn_flag,0,1,validated_end_date_authoritative
+C009796,churn_flag,0,1,validated_end_date_authoritative
+C010366,churn_flag,1,0,validated_end_date_authoritative
+C010983,churn_flag,1,0,validated_end_date_authoritative
+C011806,churn_flag,1,0,validated_end_date_authoritative
+C000549,customer_status,Inconsistent,Cancelled,validated_end_date_authoritative
+C000746,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C000818,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C001896,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C001932,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C002492,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C003150,customer_status,Inconsistent,Cancelled,validated_end_date_authoritative
+C003219,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C003235,customer_status,Inconsistent,Cancelled,validated_end_date_authoritative
+C003309,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C003769,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C004818,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C004858,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C005789,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C006125,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C006136,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C006330,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C006719,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C006887,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C007145,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C007376,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C007784,customer_status,Inconsistent,Cancelled,validated_end_date_authoritative
+C007999,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C008040,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C008830,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C009120,customer_status,Inconsistent,Cancelled,validated_end_date_authoritative
+C009796,customer_status,Inconsistent,Cancelled,validated_end_date_authoritative
+C010366,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C010983,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C011806,customer_status,Inconsistent,Active,validated_end_date_authoritative
+C000315,tenure_months,-12.0,5.9795,recompute_tenure_from_dates
+C000336,tenure_months,-12.0,2.4641,recompute_tenure_from_dates
+C000341,tenure_months,11.6304,-1.4784,recompute_tenure_from_dates
+C000688,tenure_months,-12.0,1.7413,recompute_tenure_from_dates
+C000772,tenure_months,-12.0,1.8727,recompute_tenure_from_dates
+C000962,tenure_months,7.3593,-1.4784,recompute_tenure_from_dates
+C001221,tenure_months,-12.0,13.4374,recompute_tenure_from_dates
+C001299,tenure_months,8.9035,-1.4784,recompute_tenure_from_dates
+C001347,tenure_months,17.7084,-1.4784,recompute_tenure_from_dates
+C001598,tenure_months,-12.0,13.5359,recompute_tenure_from_dates
+C001704,tenure_months,18.6612,-1.4784,recompute_tenure_from_dates
+C001879,tenure_months,-12.0,6.4394,recompute_tenure_from_dates
+C001945,tenure_months,-12.0,11.8932,recompute_tenure_from_dates
+C001967,tenure_months,0.6571,-14.4887,recompute_tenure_from_dates
+C002503,tenure_months,1.8398,-1.4784,recompute_tenure_from_dates
+C002579,tenure_months,-12.0,23.8522,recompute_tenure_from_dates
+C002679,tenure_months,0.9856,-1.4784,recompute_tenure_from_dates
+C002807,tenure_months,7.1294,-12.8789,recompute_tenure_from_dates
+C002841,tenure_months,23.4251,-1.4784,recompute_tenure_from_dates
+C002923,tenure_months,-12.0,8.9035,recompute_tenure_from_dates
+C003080,tenure_months,21.9138,-1.4784,recompute_tenure_from_dates
+C003189,tenure_months,13.2074,-1.7084,recompute_tenure_from_dates
+C003468,tenure_months,-12.0,2.9897,recompute_tenure_from_dates
+C003795,tenure_months,2.3326,-19.9754,recompute_tenure_from_dates
+C003925,tenure_months,8.4107,-1.4784,recompute_tenure_from_dates
+C004074,tenure_months,-12.0,1.6427,recompute_tenure_from_dates
+C004114,tenure_months,-12.0,1.8398,recompute_tenure_from_dates
+C004285,tenure_months,19.7125,-1.4784,recompute_tenure_from_dates
+C004326,tenure_months,-12.0,14.4559,recompute_tenure_from_dates
+C004861,tenure_months,-12.0,6.9322,recompute_tenure_from_dates
+C005020,tenure_months,12.6489,-1.4784,recompute_tenure_from_dates
+C005060,tenure_months,-12.0,8.8378,recompute_tenure_from_dates
+C005161,tenure_months,-12.0,13.4702,recompute_tenure_from_dates
+C005514,tenure_months,-12.0,6.9979,recompute_tenure_from_dates
+C005835,tenure_months,13.7002,-1.4784,recompute_tenure_from_dates
+C005926,tenure_months,14.4559,-1.4784,recompute_tenure_from_dates
+C006054,tenure_months,5.4867,-1.4784,recompute_tenure_from_dates
+C006160,tenure_months,10.5133,-4.8953,recompute_tenure_from_dates
+C006240,tenure_months,-12.0,17.7084,recompute_tenure_from_dates
+C006390,tenure_months,9.7248,-6.2423,recompute_tenure_from_dates
+C006493,tenure_months,-12.0,12.7474,recompute_tenure_from_dates
+C006795,tenure_months,-12.0,14.8501,recompute_tenure_from_dates
+C007086,tenure_months,3.4168,-1.4784,recompute_tenure_from_dates
+C007461,tenure_months,1.9055,-1.4784,recompute_tenure_from_dates
+C007836,tenure_months,-12.0,0.3614,recompute_tenure_from_dates
+C007923,tenure_months,5.9466,-1.4784,recompute_tenure_from_dates
+C008162,tenure_months,-12.0,8.345,recompute_tenure_from_dates
+C008422,tenure_months,9.4292,-14.9815,recompute_tenure_from_dates
+C009114,tenure_months,-12.0,5.8809,recompute_tenure_from_dates
+C009144,tenure_months,-12.0,1.3799,recompute_tenure_from_dates
+C009308,tenure_months,7.2936,-6.1109,recompute_tenure_from_dates
+C009444,tenure_months,-12.0,13.4045,recompute_tenure_from_dates
+C009450,tenure_months,2.4969,-1.4784,recompute_tenure_from_dates
+C009461,tenure_months,4.8953,-1.4784,recompute_tenure_from_dates
+C010143,tenure_months,-12.0,19.8111,recompute_tenure_from_dates
+C010252,tenure_months,-12.0,18.8583,recompute_tenure_from_dates
+C011120,tenure_months,0.7228,-10.4805,recompute_tenure_from_dates
+C011325,tenure_months,23.885,-1.4784,recompute_tenure_from_dates
+C011563,tenure_months,-12.0,2.8583,recompute_tenure_from_dates
+C011724,tenure_months,-12.0,2.924,recompute_tenure_from_dates

@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "python": "3.12.14",
+  "platform": "Windows",
+  "packages": {
+    "pandas": "3.0.1",
+    "numpy": "2.3.5",
+    "matplotlib": "3.11.2",
+    "scikit-learn": "1.9.1",
+    "boto3": "1.43.93",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.3.0",
+    "pytest": "9.1.1",
+    "sqlglot": "30.18.0"
+  },
+  "steps": [
+    {
+      "step": "generate_dataset",
+      "seconds": 3.384,
+      "status": "PASS"
+    },
+    {
+      "step": "clean",
+      "seconds": 6.912,
+      "status": "PASS"
+    },
+    {
+      "step": "analytics",
+      "seconds": 1.826,
+      "status": "PASS"
+    },
+    {
+      "step": "sql",
+      "seconds": 6.969,
+      "status": "PASS"
+    },
+    {
+      "step": "quicksight_export",
+      "seconds": 0.781,
+      "status": "PASS"
+    },
+    {
+      "step": "model",
+      "seconds": 2.423,
+      "status": "PASS"
+    },
+    {
+      "step": "charts",
+      "seconds": 5.004,
+      "status": "PASS"
+    },
+    {
+      "step": "insights",
+      "seconds": 0.165,
+      "status": "PASS"
+    },
+    {
+      "step": "notebook_creation",
+      "seconds": 0.053,
+      "status": "PASS"
+    },
+    {
+      "step": "notebook_execution",
+      "seconds": 14.129,
+      "status": "PASS"
+    },
+    {
+      "step": "validation",
+      "seconds": 2.309,
+      "status": "PASS"
+    },
+    {
+      "step": "pytest",
+      "status": "PASS"
+    }
+  ],
+  "source_and_mart_sha256": {
+    "data/raw/customers.csv": "9dfd9bc960bfce379f451122a215dbcf906f1cd91c32be7705fc242ba381e36f",
+    "data/raw/generation_metadata.json": "e0cf3755506c48d2a15fc8d259a96a00e3c48d38fd2a0f946a342cb4136f1929",
+    "data/raw/monthly_snapshots.csv": "44fe58e7a5ff25b023d6a4b45e0cfbfeb9cde885fc11e0429d711f1c13e7323b",
+    "data/processed/channel_performance.csv": "de3dc4ed720b6ecea6df3b4bfba34dd2982bd8773d6bfef941ad79e456be3105",
+    "data/processed/churn_driver_associations.csv": "468f234489916a2d4fab1300ac19732966a98f2a5366c88b40d0a99ed3c1aac3",
+    "data/processed/cohort_retention.csv": "52816b8adad9f91df7762eff2c9679bd235089a5b12468510a0877079f5d4f64",
+    "data/processed/customer_risk_scores.csv": "434610beeabffe2da5c9cfab022f2915fecd71b306d131ad1b052fcfbdeafa86",
+    "data/processed/customer_segments.csv": "5442e13341f82a7c5039c3ab50891b2680a7f2a1b042e180ece01f09009625f7",
+    "data/processed/customers_clean.csv": "defbbbc1e8dd0c6d6d787c4ca5eff99ce2969d232bb45be1b62297552f2d1999",
+    "data/processed/geography_performance.csv": "09edb96a9aca060c041c05c0da04b8d62a65d9069ee8813f6ece7ebb41043445",
+    "data/processed/monthly_churn_kpis.csv": "a1d3e7d989e6849a76248a641e8b4653488e4e900642602109acb3ea420c26e2",
+    "data/processed/monthly_retention_kpis.csv": "44043816079f6e3933045d68d8642e6f6fd7258b1e54657164580e8e192947da",
+    "data/processed/monthly_snapshots.csv": "c3820aab13ae49b37bba4d802515647972b19cc79c0411f06f9138fdb52306e9",
+    "data/processed/plan_performance.csv": "e50bd2f27aa3398bc4fdbcc1b8fbbcf74181ac9b073d548a699192b868d35ab1",
+    "data/processed/retention_by_dimension.csv": "fbe1da7fd9bbe0b4ab1d7c61ed6195cc4c29e9ce2edfb6d19745ee27ffff085c",
+    "data/processed/revenue_churn_impact.csv": "3b21242db16aef77c988fd30efb0e3c98ad5f4b745df99d5d5f0d63a3a519651",
+    "data/processed/support_usage_analysis.csv": "7a5d2768994d54250e7ba0bce0eb626ded62ed2eadcfb6e39101573acaf47118"
+  },
+  "aws_status": "Not deployed; local artifacts prepared. No AWS calls performed by pipeline."
+}

@@ -1,0 +1,5 @@
+tenure_band,customers,churned_customers,cumulative_churn_rate
+0-2 months,3108,1303,0.41924067
+3-5 months,2065,651,0.31525424
+6-11 months,3257,887,0.27233651
+12+ months,3450,508,0.14724638

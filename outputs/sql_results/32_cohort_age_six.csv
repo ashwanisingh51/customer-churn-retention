@@ -1,0 +1,15 @@
+dimension,category,eligible_customers,retained_customers,retention_rate
+acquisition_channel,Referral,1491,1246,0.83568075
+acquisition_channel,Organic,2346,1882,0.80221654
+acquisition_channel,Partner,806,642,0.79652605
+acquisition_channel,Paid Search,2196,1742,0.79326047
+acquisition_channel,Social,1392,1069,0.76795977
+contract_type,Annual,2271,1957,0.86173492
+contract_type,Monthly,5960,4624,0.77583893
+plan_type,Premium,1740,1399,0.80402299
+plan_type,Basic,3368,2704,0.80285036
+plan_type,Standard,3123,2478,0.79346782
+region,Midwest,2107,1694,0.80398671
+region,Northeast,1995,1602,0.80300752
+region,South,2019,1609,0.79692917
+region,West,2110,1676,0.79431280

@@ -1,0 +1,19 @@
+{
+  "fresh_environment": true,
+  "system_site_packages": false,
+  "pipeline_exit_code": 0,
+  "all_raw_and_processed_hashes_identical": true,
+  "files_compared": 17,
+  "changed_files": [],
+  "dependency_check": "No broken requirements found.",
+  "dependency_exit_code": 0,
+  "compile_exit_code": 0,
+  "aws_live_tested": false,
+  "final_pytest_tests": 121,
+  "final_pytest_passed": 121,
+  "visual_qa": "Executive overview, cohort heatmap and representative driver charts reviewed; driver caption spacing corrected and charts/notebooks regenerated.",
+  "notebooks_executed": 4,
+  "s3_dry_run_datasets": 14,
+  "aws_credentials_available": false,
+  "aws_region_and_bucket_configured": false
+}

@@ -1,0 +1,4 @@
+plan_type,customers,churned_customers,cumulative_churn_rate
+Premium,2435,696,0.28583162
+Standard,4525,1289,0.28486188
+Basic,4920,1364,0.27723577

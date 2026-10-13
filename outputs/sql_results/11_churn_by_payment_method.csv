@@ -1,0 +1,5 @@
+payment_method,customers,churned_customers,cumulative_churn_rate
+Unknown,30,9,0.30000000
+Digital Wallet,2347,668,0.28461866
+Credit Card,6499,1828,0.28127404
+Bank Transfer,3004,844,0.28095872

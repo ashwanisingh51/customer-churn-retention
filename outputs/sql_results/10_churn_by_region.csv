@@ -1,0 +1,5 @@
+region,customers,churned_customers,cumulative_churn_rate
+Northeast,2868,820,0.28591353
+South,2966,837,0.28219825
+Midwest,2999,846,0.28209403
+West,3047,846,0.27765015

@@ -1,0 +1,1317 @@
+{
+  "channel_performance": {
+    "grain": "One acquisition channel; cumulative outcomes and current MRR.",
+    "primary_key": [
+      "acquisition_channel"
+    ],
+    "rows": 5,
+    "s3_key": "quicksight/channel_performance/channel_performance.csv",
+    "columns": [
+      {
+        "name": "acquisition_channel",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "total_customers",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "active_customers",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "churned_customers",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "active_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "revenue_at_risk",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "observed_revenue",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "average_clv",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "average_tenure",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "churn_rate",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "retention_rate",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "arpu",
+        "type": "double",
+        "nullable": false
+      }
+    ]
+  },
+  "churn_driver_associations": {
+    "grain": "One driver and category; prior-month exposure linked to next-month cancellations. Different drivers reuse exposures.",
+    "primary_key": [
+      "driver",
+      "category"
+    ],
+    "rows": 9761,
+    "s3_key": "quicksight/churn_driver_associations/churn_driver_associations.csv",
+    "columns": [
+      {
+        "name": "driver",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "category",
+        "type": "varchar",
+        "nullable": true
+      },
+      {
+        "name": "exposures",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "distinct_customers",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "next_month_churns",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "next_month_churn_rate",
+        "type": "double",
+        "nullable": false
+      }
+    ]
+  },
+  "cohort_retention": {
+    "grain": "One subscription-start cohort month and age 0-23; future outcomes are null.",
+    "primary_key": [
+      "cohort_month",
+      "cohort_age"
+    ],
+    "rows": 576,
+    "s3_key": "quicksight/cohort_retention/cohort_retention.csv",
+    "columns": [
+      {
+        "name": "cohort_month",
+        "type": "date",
+        "nullable": false
+      },
+      {
+        "name": "cohort_age",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "cohort_size",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "retained_customers",
+        "type": "double",
+        "nullable": true
+      },
+      {
+        "name": "retention_rate",
+        "type": "double",
+        "nullable": true
+      },
+      {
+        "name": "is_observed",
+        "type": "bigint",
+        "nullable": false
+      }
+    ]
+  },
+  "customer_risk_scores": {
+    "grain": "One customer at cutoff and nine auditable risk components; risk is null for churned customers.",
+    "primary_key": [
+      "customer_id"
+    ],
+    "rows": 11880,
+    "s3_key": "quicksight/customer_risk_scores/customer_risk_scores.csv",
+    "columns": [
+      {
+        "name": "customer_id",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "as_of_date",
+        "type": "date",
+        "nullable": false
+      },
+      {
+        "name": "plan_type",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "contract_type",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "acquisition_channel",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "region",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "monthly_revenue",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "tenure_months",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "observed_clv",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "engagement_score",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "customer_segment",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "churn_flag",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "active_flag",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "risk_score",
+        "type": "bigint",
+        "nullable": true
+      },
+      {
+        "name": "risk_band",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "high_value_flag",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "high_risk_flag",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "active_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "revenue_at_risk",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "retention_priority",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "risk_inactivity",
+        "type": "bigint",
+        "nullable": true
+      },
+      {
+        "name": "risk_engagement",
+        "type": "bigint",
+        "nullable": true
+      },
+      {
+        "name": "risk_support",
+        "type": "bigint",
+        "nullable": true
+      },
+      {
+        "name": "risk_complaints",
+        "type": "bigint",
+        "nullable": true
+      },
+      {
+        "name": "risk_payment",
+        "type": "bigint",
+        "nullable": true
+      },
+      {
+        "name": "risk_usage",
+        "type": "bigint",
+        "nullable": true
+      },
+      {
+        "name": "risk_new",
+        "type": "bigint",
+        "nullable": true
+      },
+      {
+        "name": "risk_renewal",
+        "type": "bigint",
+        "nullable": true
+      },
+      {
+        "name": "risk_decline",
+        "type": "bigint",
+        "nullable": true
+      }
+    ]
+  },
+  "customer_segments": {
+    "grain": "One customer at cutoff, with mutually exclusive segment and current-risk attributes.",
+    "primary_key": [
+      "customer_id"
+    ],
+    "rows": 11880,
+    "s3_key": "quicksight/customer_segments/customer_segments.csv",
+    "columns": [
+      {
+        "name": "customer_id",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "as_of_date",
+        "type": "date",
+        "nullable": false
+      },
+      {
+        "name": "plan_type",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "contract_type",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "acquisition_channel",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "region",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "monthly_revenue",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "tenure_months",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "observed_clv",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "engagement_score",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "customer_segment",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "churn_flag",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "active_flag",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "risk_score",
+        "type": "bigint",
+        "nullable": true
+      },
+      {
+        "name": "risk_band",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "high_value_flag",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "high_risk_flag",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "active_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "revenue_at_risk",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "retention_priority",
+        "type": "varchar",
+        "nullable": false
+      }
+    ]
+  },
+  "customers_clean": {
+    "grain": "One customer at the reporting cutoff; latest telemetry for active customers or at cancellation.",
+    "primary_key": [
+      "customer_id"
+    ],
+    "rows": 11880,
+    "s3_key": "quicksight/customers_clean/customers_clean.csv",
+    "columns": [
+      {
+        "name": "customer_id",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "subscription_start_date",
+        "type": "date",
+        "nullable": false
+      },
+      {
+        "name": "signup_date",
+        "type": "date",
+        "nullable": false
+      },
+      {
+        "name": "plan_type",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "contract_type",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "monthly_fee",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "payment_method",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "auto_renew",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "acquisition_channel",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "city",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "region",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "age_group",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "discount_percentage",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "subscription_end_date",
+        "type": "date",
+        "nullable": true
+      },
+      {
+        "name": "support_tickets",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "complaints",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "login_frequency",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "monthly_usage",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "feature_usage_score",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "payment_failures",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "late_payments",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "last_activity_date",
+        "type": "date",
+        "nullable": false
+      },
+      {
+        "name": "churn_date",
+        "type": "date",
+        "nullable": true
+      },
+      {
+        "name": "churn_flag",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "customer_status",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "tenure_months",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "engagement_score",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "recent_usage_decline",
+        "type": "double",
+        "nullable": true
+      },
+      {
+        "name": "as_of_date",
+        "type": "date",
+        "nullable": false
+      },
+      {
+        "name": "observation_date",
+        "type": "date",
+        "nullable": false
+      },
+      {
+        "name": "customer_tenure",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "customer_age_months",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "days_since_last_activity",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "monthly_revenue",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "observed_clv",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "support_ticket_band",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "usage_band",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "engagement_band",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "tenure_band",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "acquisition_cohort",
+        "type": "date",
+        "nullable": false
+      },
+      {
+        "name": "churn_month",
+        "type": "date",
+        "nullable": true
+      },
+      {
+        "name": "risk_score",
+        "type": "bigint",
+        "nullable": true
+      },
+      {
+        "name": "risk_band",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "high_value_flag",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "active_flag",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "high_risk_flag",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "active_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "revenue_at_risk",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "customer_segment",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "retention_priority",
+        "type": "varchar",
+        "nullable": false
+      }
+    ]
+  },
+  "geography_performance": {
+    "grain": "One region; cumulative outcomes and current MRR.",
+    "primary_key": [
+      "region"
+    ],
+    "rows": 4,
+    "s3_key": "quicksight/geography_performance/geography_performance.csv",
+    "columns": [
+      {
+        "name": "region",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "total_customers",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "active_customers",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "churned_customers",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "active_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "revenue_at_risk",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "observed_revenue",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "average_clv",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "average_tenure",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "churn_rate",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "retention_rate",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "arpu",
+        "type": "double",
+        "nullable": false
+      }
+    ]
+  },
+  "monthly_churn_kpis": {
+    "grain": "One calendar month; opening base, flows and closing stocks.",
+    "primary_key": [
+      "month"
+    ],
+    "rows": 24,
+    "s3_key": "quicksight/monthly_churn_kpis/monthly_churn_kpis.csv",
+    "columns": [
+      {
+        "name": "month",
+        "type": "date",
+        "nullable": false
+      },
+      {
+        "name": "is_active_start",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "new_customer",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "churn_event",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "is_active_end",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "opening_customer_churn",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "new_customer_churn",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "renewal_due",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "renewal_success",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "start_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "new_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "churned_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "end_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "recognized_revenue",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "retained_opening_customers",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "churn_rate",
+        "type": "double",
+        "nullable": true
+      },
+      {
+        "name": "retention_rate",
+        "type": "double",
+        "nullable": true
+      },
+      {
+        "name": "renewal_rate",
+        "type": "double",
+        "nullable": true
+      },
+      {
+        "name": "net_customer_growth",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "customer_growth_rate",
+        "type": "double",
+        "nullable": true
+      },
+      {
+        "name": "arpu",
+        "type": "double",
+        "nullable": false
+      }
+    ]
+  },
+  "monthly_retention_kpis": {
+    "grain": "One calendar month; retention of opening customers and renewal events.",
+    "primary_key": [
+      "month"
+    ],
+    "rows": 24,
+    "s3_key": "quicksight/monthly_retention_kpis/monthly_retention_kpis.csv",
+    "columns": [
+      {
+        "name": "month",
+        "type": "date",
+        "nullable": false
+      },
+      {
+        "name": "is_active_start",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "retained_opening_customers",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "opening_customer_churn",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "retention_rate",
+        "type": "double",
+        "nullable": true
+      },
+      {
+        "name": "renewal_due",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "renewal_success",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "renewal_rate",
+        "type": "double",
+        "nullable": true
+      }
+    ]
+  },
+  "monthly_snapshots": {
+    "grain": "One customer and calendar month with subscription exposure, including cancellation month; no rows after cancellation.",
+    "primary_key": [
+      "customer_id",
+      "snapshot_month"
+    ],
+    "rows": 107858,
+    "s3_key": "quicksight/monthly_snapshots/monthly_snapshots.csv",
+    "columns": [
+      {
+        "name": "customer_id",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "plan_type",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "contract_type",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "acquisition_channel",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "region",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "payment_method",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "auto_renew",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "monthly_fee",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "discount_percentage",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "snapshot_month",
+        "type": "date",
+        "nullable": false
+      },
+      {
+        "name": "customer_age_months",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "is_active_start",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "new_customer",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "churn_event",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "is_active_end",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "opening_customer_churn",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "new_customer_churn",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "renewal_due",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "renewal_success",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "monthly_revenue",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "start_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "new_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "churned_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "end_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "recognized_revenue",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "active_days",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "support_tickets",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "complaints",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "login_frequency",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "monthly_usage",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "feature_usage_score",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "payment_failures",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "late_payments",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "last_activity_date",
+        "type": "date",
+        "nullable": false
+      },
+      {
+        "name": "engagement_score",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "prior_usage_mean",
+        "type": "double",
+        "nullable": true
+      },
+      {
+        "name": "recent_usage_decline",
+        "type": "double",
+        "nullable": true
+      }
+    ]
+  },
+  "plan_performance": {
+    "grain": "One plan; cumulative customer outcomes and current MRR.",
+    "primary_key": [
+      "plan_type"
+    ],
+    "rows": 3,
+    "s3_key": "quicksight/plan_performance/plan_performance.csv",
+    "columns": [
+      {
+        "name": "plan_type",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "total_customers",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "active_customers",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "churned_customers",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "active_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "revenue_at_risk",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "observed_revenue",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "average_clv",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "average_tenure",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "churn_rate",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "retention_rate",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "arpu",
+        "type": "double",
+        "nullable": false
+      }
+    ]
+  },
+  "retention_by_dimension": {
+    "grain": "One dimension and category; fixed age-6 retention for mature acquisition cohorts only.",
+    "primary_key": [
+      "dimension",
+      "category"
+    ],
+    "rows": 14,
+    "s3_key": "quicksight/retention_by_dimension/retention_by_dimension.csv",
+    "columns": [
+      {
+        "name": "dimension",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "category",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "eligible_customers",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "retained_customers",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "retention_rate",
+        "type": "double",
+        "nullable": false
+      }
+    ]
+  },
+  "revenue_churn_impact": {
+    "grain": "One calendar month; normalized MRR bridge and prorated recognized revenue.",
+    "primary_key": [
+      "month"
+    ],
+    "rows": 24,
+    "s3_key": "quicksight/revenue_churn_impact/revenue_churn_impact.csv",
+    "columns": [
+      {
+        "name": "month",
+        "type": "date",
+        "nullable": false
+      },
+      {
+        "name": "start_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "new_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "churned_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "end_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "recognized_revenue",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "is_active_end",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "arpu",
+        "type": "double",
+        "nullable": false
+      }
+    ]
+  },
+  "support_usage_analysis": {
+    "grain": "One latest-observation support-ticket band and usage band; descriptive cumulative outcomes.",
+    "primary_key": [
+      "support_ticket_band",
+      "usage_band"
+    ],
+    "rows": 9,
+    "s3_key": "quicksight/support_usage_analysis/support_usage_analysis.csv",
+    "columns": [
+      {
+        "name": "support_ticket_band",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "usage_band",
+        "type": "varchar",
+        "nullable": false
+      },
+      {
+        "name": "customers",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "churned_customers",
+        "type": "bigint",
+        "nullable": false
+      },
+      {
+        "name": "active_mrr",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "average_engagement",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "revenue_at_risk",
+        "type": "double",
+        "nullable": false
+      },
+      {
+        "name": "churn_rate",
+        "type": "double",
+        "nullable": false
+      }
+    ]
+  }
+}

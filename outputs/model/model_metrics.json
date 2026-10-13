@@ -1,0 +1,185 @@
+{
+  "prototype": true,
+  "target": "Cancellation in next calendar month among active month-end customers",
+  "features": [
+    "customer_age_months",
+    "monthly_revenue",
+    "support_tickets",
+    "complaints",
+    "login_frequency",
+    "monthly_usage",
+    "feature_usage_score",
+    "payment_failures",
+    "late_payments",
+    "auto_renew",
+    "discount_percentage",
+    "engagement_score",
+    "recent_usage_decline",
+    "plan_type",
+    "contract_type",
+    "acquisition_channel",
+    "region",
+    "payment_method"
+  ],
+  "selection_metric": "Validation PR-AUC",
+  "threshold_selection": "Validation F1 only",
+  "selected_model": "logistic_regression",
+  "models": {
+    "logistic_regression": {
+      "validation": {
+        "accuracy": 0.87731919727376,
+        "precision": 0.10580204778156997,
+        "recall": 0.3333333333333333,
+        "f1": 0.16062176165803108,
+        "roc_auc": 0.7026172751979204,
+        "pr_auc": 0.09955478464246784,
+        "confusion_matrix": [
+          [
+            2286,
+            262
+          ],
+          [
+            62,
+            31
+          ]
+        ],
+        "threshold": 0.6499999999999999
+      },
+      "test": {
+        "accuracy": 0.8797356828193833,
+        "precision": 0.07056451612903226,
+        "recall": 0.2916666666666667,
+        "f1": 0.11363636363636363,
+        "roc_auc": 0.6503544494720964,
+        "pr_auc": 0.06210727725657423,
+        "confusion_matrix": [
+          [
+            3959,
+            461
+          ],
+          [
+            85,
+            35
+          ]
+        ],
+        "threshold": 0.6499999999999999
+      }
+    },
+    "decision_tree": {
+      "validation": {
+        "accuracy": 0.7588034835289663,
+        "precision": 0.0763239875389408,
+        "recall": 0.5268817204301075,
+        "f1": 0.13333333333333333,
+        "roc_auc": 0.695400989179791,
+        "pr_auc": 0.07080705453250044,
+        "confusion_matrix": [
+          [
+            1955,
+            593
+          ],
+          [
+            44,
+            49
+          ]
+        ],
+        "threshold": 0.62
+      },
+      "test": {
+        "accuracy": 0.7411894273127754,
+        "precision": 0.04170286707211121,
+        "recall": 0.4,
+        "f1": 0.07553107789142408,
+        "roc_auc": 0.592372737556561,
+        "pr_auc": 0.0426136935332872,
+        "confusion_matrix": [
+          [
+            3317,
+            1103
+          ],
+          [
+            72,
+            48
+          ]
+        ],
+        "threshold": 0.62
+      }
+    },
+    "baseline": {
+      "validation": {
+        "accuracy": 0.9647860658841348,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "roc_auc": 0.5,
+        "pr_auc": 0.0352139341158652,
+        "confusion_matrix": [
+          [
+            2548,
+            0
+          ],
+          [
+            93,
+            0
+          ]
+        ],
+        "threshold": 0.5
+      },
+      "test": {
+        "accuracy": 0.973568281938326,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "roc_auc": 0.5,
+        "pr_auc": 0.02643171806167401,
+        "confusion_matrix": [
+          [
+            4420,
+            0
+          ],
+          [
+            120,
+            0
+          ]
+        ],
+        "threshold": 0.5
+      }
+    }
+  },
+  "splits": {
+    "train": {
+      "rows": 28208,
+      "customers": 4122,
+      "positive_labels": 898,
+      "feature_min": "2024-09-01",
+      "feature_max": "2025-12-01",
+      "label_min": "2024-10-01",
+      "label_max": "2026-01-01"
+    },
+    "validation": {
+      "rows": 2641,
+      "customers": 1406,
+      "positive_labels": 93,
+      "feature_min": "2026-02-01",
+      "feature_max": "2026-03-01",
+      "label_min": "2026-03-01",
+      "label_max": "2026-04-01"
+    },
+    "test": {
+      "rows": 4540,
+      "customers": 1661,
+      "positive_labels": 120,
+      "feature_min": "2026-05-01",
+      "feature_max": "2026-07-01",
+      "label_min": "2026-06-01",
+      "label_max": "2026-08-01"
+    }
+  },
+  "limitations": [
+    "Synthetic data reflects the generator's assumptions.",
+    "Repeated customer-months are correlated; no independent-sample confidence intervals are claimed.",
+    "Balanced-class scores are not calibrated operational probabilities.",
+    "No churn date, final status, final tenure, future revenue or customer ID is a feature.",
+    "No deployment, realized impact or production readiness claimed."
+  ]
+}

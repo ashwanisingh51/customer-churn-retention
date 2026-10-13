@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "notebooks": [
+    {
+      "notebook": "01_data_cleaning.ipynb",
+      "executed_code_cells": 5,
+      "status": "PASS"
+    },
+    {
+      "notebook": "02_eda.ipynb",
+      "executed_code_cells": 6,
+      "status": "PASS"
+    },
+    {
+      "notebook": "03_retention_churn_analysis.ipynb",
+      "executed_code_cells": 6,
+      "status": "PASS"
+    },
+    {
+      "notebook": "04_churn_model.ipynb",
+      "executed_code_cells": 5,
+      "status": "PASS"
+    }
+  ]
+}

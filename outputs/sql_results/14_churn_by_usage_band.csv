@@ -1,0 +1,4 @@
+usage_band,customers,churned_customers,cumulative_churn_rate
+Low,2216,985,0.44449458
+Medium,6557,1897,0.28930914
+High,3107,467,0.15030576

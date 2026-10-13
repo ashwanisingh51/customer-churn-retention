@@ -1,0 +1,509 @@
+{
+  "passed": 100,
+  "failed": 0,
+  "total": 100,
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "minimum_customer_population",
+      "passed": true,
+      "detail": "11880"
+    },
+    {
+      "check": "unique_customer_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "unique_customer_months",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "active_plus_churned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "date_based_status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "status_labels",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "customer_count_kpi",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "active_count_kpi",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "churn_count_kpi",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "cumulative_churn_kpi",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "active_share_kpi",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "monthly_churn_kpi",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "monthly_retention_complement",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fees_nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "discount_fraction_range",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "signup_before_start",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "start_before_cutoff",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "churn_not_future",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "churn_after_start",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "end_equals_churn",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "last_activity_valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "tenure_recomputed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "snapshot_foreign_keys",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw_customer_accounting",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw_snapshot_accounting",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "monthly_rate_normalization",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "mrr_current",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "arpu",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "risk_points_range",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "churned_risk_not_applicable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "risk_bands",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "at_risk_mrr_independent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "high_risk_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "risk_below_total_mrr",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "clv_from_monthly_revenue",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "observed_revenue_total",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "prechurn_revenue",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "one_cancellation_per_customer",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "cancellation_events_reconcile",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "new_customer_events_reconcile",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "monthly_customer_bridge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "monthly_mrr_bridge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "consecutive_customer_stocks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "consecutive_mrr_stocks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "closing_customers_current",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "closing_mrr_current",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "renewals_subset",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "renewal_schedule",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "renewal_outcomes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "renewal_kpi",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "first_month_denominator_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all_monthly_counts_from_customer_dates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "billing_proration_independent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_post_cancellation_snapshots",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "future_cohort_values_null",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "observed_cohort_values_present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "cohort_bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "cohort_denominators",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "cohort_survival_monotone",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "cohort_retention_from_snapshot_survival",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "cohort_month_zero_not_forced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "cohort_rate_arithmetic",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "customer_segments_count_and_keys",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "customer_segments_revenue",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "customer_risk_scores_count_and_keys",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "customer_risk_scores_revenue",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "plan_performance_customer_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "plan_performance_mrr",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "channel_performance_customer_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "channel_performance_mrr",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "geography_performance_customer_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "geography_performance_mrr",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "risk_component_sum",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "segmentation_coverage",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "sqlite_integrity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "sqlite_foreign_keys",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "sql_python_executive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "sql_python_cohort",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "sql_python_monthly_churn",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all_sql_outputs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "model_customer_disjoint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "model_temporal_separation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "model_labels_fully_observed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "model_no_leakage_features",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "model_test_matrix_total",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "model_test_matrix_positives",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "dataset_contract_channel_performance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "dataset_contract_churn_driver_associations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "dataset_contract_cohort_retention",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "dataset_contract_customer_risk_scores",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "dataset_contract_customer_segments",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "dataset_contract_customers_clean",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "dataset_contract_geography_performance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "dataset_contract_monthly_churn_kpis",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "dataset_contract_monthly_retention_kpis",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "dataset_contract_monthly_snapshots",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "dataset_contract_plan_performance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "dataset_contract_retention_by_dimension",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "dataset_contract_revenue_churn_impact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "dataset_contract_support_usage_analysis",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "scope": "Executed locally: CSV, customer-date/snapshot/billing reconciliation, SQLite, cohorts, risk and ML split validation. Live AWS validation is pending."
+}

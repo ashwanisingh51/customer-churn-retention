@@ -1,0 +1,31 @@
+feature,coefficient
+categorical__plan_type_Premium,1.29717822
+numeric__login_frequency,0.26936583
+categorical__contract_type_Monthly,0.23457875
+numeric__feature_usage_score,0.23261776
+numeric__monthly_usage,0.19980035
+numeric__support_tickets,0.11897367
+numeric__complaints,0.08792698
+categorical__region_South,0.08781344
+categorical__acquisition_channel_Organic,0.08681027
+numeric__payment_failures,0.07892546
+categorical__payment_method_Bank Transfer,0.05106364
+categorical__acquisition_channel_Social,0.03455107
+numeric__customer_age_months,0.00547438
+categorical__acquisition_channel_Partner,-0.00044064
+categorical__region_Northeast,-0.00087816
+categorical__region_West,-0.01170457
+categorical__acquisition_channel_Paid Search,-0.02332482
+categorical__payment_method_Digital Wallet,-0.02447000
+categorical__payment_method_Credit Card,-0.03569365
+numeric__late_payments,-0.03982241
+numeric__discount_percentage,-0.06000957
+categorical__region_Midwest,-0.08433072
+categorical__acquisition_channel_Referral,-0.10669590
+numeric__recent_usage_decline,-0.12006739
+categorical__plan_type_Standard,-0.15211710
+numeric__auto_renew,-0.17709368
+categorical__contract_type_Annual,-0.24367877
+numeric__monthly_revenue,-0.94041141
+categorical__plan_type_Basic,-1.15416114
+numeric__engagement_score,-1.19212897

@@ -1,0 +1,24 @@
+{
+  "seed": 20260913,
+  "customers_generated": 12000,
+  "as_of_date": "2026-08-31",
+  "first_month": "2024-09-01",
+  "months": 24,
+  "currency": "USD",
+  "source": "Synthetic; generated locally",
+  "injected_issues": {
+    "missing_payment": 30,
+    "missing_region": 30,
+    "plan_alias": 30,
+    "negative_fee": 30,
+    "invalid_tenure": 30,
+    "early_churn_date": 30,
+    "impossible_start": 30,
+    "status_mismatch": 30,
+    "invalid_discount": 30
+  },
+  "duplicate_customers": 120,
+  "duplicate_snapshots": 50,
+  "raw_customer_rows": 12120,
+  "raw_snapshot_rows": 109052
+}

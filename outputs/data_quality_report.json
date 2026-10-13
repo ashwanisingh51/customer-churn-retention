@@ -1,0 +1,28 @@
+{
+  "raw_customer_rows": 12120,
+  "exact_duplicate_customer_rows_removed": 120,
+  "quarantined_customers": 120,
+  "clean_customers": 11880,
+  "repair_events": 210,
+  "repairs_by_rule": {
+    "validated_end_date_authoritative": 60,
+    "recompute_tenure_from_dates": 60,
+    "standardize_plan": 30,
+    "missing_category_to_unknown": 30,
+    "city_reference_mapping": 30
+  },
+  "quarantine_reason_counts": {
+    "invalid_churn_date": 39,
+    "conflicting_end_and_churn_dates": 30,
+    "invalid_discount": 30,
+    "invalid_subscription_start": 30,
+    "invalid_last_activity": 30,
+    "invalid_monthly_fee": 30,
+    "invalid_subscription_end": 9
+  },
+  "policy": "Exact duplicates removed. Conflicting IDs and invalid financial/date records quarantined; no guessed fees or end dates. Repairs are logged before quarantine, so logs can include quarantined IDs.",
+  "raw_snapshot_rows": 109052,
+  "duplicate_snapshot_rows_removed": 50,
+  "snapshot_rows_excluded_with_quarantined_parent": 1144,
+  "clean_snapshot_rows": 107858
+}

@@ -1,0 +1,4 @@
+engagement_band,customers,churned_customers,cumulative_churn_rate
+Low,2426,1144,0.47155812
+Medium,5803,1682,0.28985008
+High,3651,523,0.14324843
