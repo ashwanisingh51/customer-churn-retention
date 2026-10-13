@@ -123,7 +123,7 @@ Complete dashboard_qa_checklist.md. Compare default totals to executive_kpis.jso
 
 Choose Publish dashboard, give it a clear title and share only with intended users/groups. Apply row-level security if later using real restricted data; the bundled data contain no real customer identities. Verify viewer permissions and SPICE refresh access.
 
-Only after publication should you add a live dashboard URL and AWS screenshots to the README or claim that you built a deployed QuickSight dashboard. The bundled resume bullets deliberately state that the AWS layer is prepared.
+Only after publication should you add a live dashboard URL and AWS screenshots to the README or claim that you built a deployed QuickSight dashboard.
 
 ## 15. Troubleshooting
 
